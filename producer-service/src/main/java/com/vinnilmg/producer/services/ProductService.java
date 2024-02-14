@@ -1,5 +1,6 @@
 package com.vinnilmg.producer.services;
 
+import dtos.ProductDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -11,13 +12,12 @@ import static constants.RabbitMQConstants.RK_PRODUCT_LOG;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class StringService {
+public class ProductService {
 
     private final RabbitTemplate rabbitTemplate;
 
-    public void produce(String message) {
-        log.info("Received message: {}", message);
-        rabbitTemplate.convertAndSend(EXG_NAME_MARKETPLACE, RK_PRODUCT_LOG, message);
+    public void createProduct(ProductDTO dto) {
+        log.info("Sending a message to exchange: {}", dto.toString());
+        rabbitTemplate.convertAndSend(EXG_NAME_MARKETPLACE, RK_PRODUCT_LOG, dto);
     }
-
 }

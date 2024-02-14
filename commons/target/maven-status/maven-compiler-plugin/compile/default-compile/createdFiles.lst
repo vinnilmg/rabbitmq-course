@@ -1,1 +1,2 @@
 dtos\ProductDTO.class
+constants\RabbitMQConstants.class
