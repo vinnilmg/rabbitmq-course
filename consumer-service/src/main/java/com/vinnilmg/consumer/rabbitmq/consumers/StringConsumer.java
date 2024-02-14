@@ -10,6 +10,6 @@ public class StringConsumer {
 
     @RabbitListener(queues = {"product.log"})
     public void consumerLog(String message) {
-        log.info("[LOG] Consumer received a message: {}", message);
+        log.info("Consumer received a message: {}", message);
     }
 }
