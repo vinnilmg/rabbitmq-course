@@ -1,5 +1,5 @@
 # RABBITMQ-COURSE
-Projetos desenvolvidos no curso: https://www.udemy.com/share/107Uv83@EVyboNUaSBMernY2Ud43pazqwuBwSNZ4RVhCmVzy62Sz-58wN_1jekF_yDpUBUQO/
+Projetos desenvolvidos no curso: https://www.udemy.com/share/107Uv83@CHyOmaEXDBb3nbx1d1sGClJvrLL8XB5tAvRihkpzuC-CdRKwXqhrKKeo-y3UMChH/
 
 ### Aplicações
 - producer-service: Produtor de mensagens
